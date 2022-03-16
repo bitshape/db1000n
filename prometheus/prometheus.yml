@@ -7,11 +7,15 @@ rule_files:
   # - "second.rules"
 
 scrape_configs:
-  - job_name: vpn_01
+  - job_name: db1000n_01
     scrape_interval: 5s
     static_configs:
       - targets: ['172.20.0.97:9091']
-  - job_name: vpn_02
+  - job_name: db1000n_02
     scrape_interval: 5s
     static_configs:
       - targets: ['172.20.0.98:9091']
+  - job_name: db1000n_03
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['172.20.0.99:9091']
