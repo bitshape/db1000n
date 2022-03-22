@@ -73,7 +73,7 @@ func main() {
 	skipEncrytedJobs := flag.Bool("skip-encrypted", utils.GetEnvBoolDefault("SKIP_ENCRYPTED", false),
 		"set to true if you want to only run plaintext jobs from the config for security considerations")
 	enablePrimitiveJobs := flag.Bool("enable-primitive", utils.GetEnvBoolDefault("ENABLE_PRIMITIVE", true),
-		"set to true if you want to run primitive jobs that are less resource-efficient")
+		"set to true if you want to run primitive jobs that are less resource intensive")
 
 	// Prometheus
 	prometheusOn := flag.Bool("prometheus_on", utils.GetEnvBoolDefault("PROMETHEUS_ON", true),
